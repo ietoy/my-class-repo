@@ -14,29 +14,66 @@ header {
   padding: 20px;
   margin-bottom: 20px;
   color: #333;
-  background: #ccc;
+  background: #ffa500;
 }
 
 section {
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 #left {
+  color: white;
+  background: #30948D;
+  width: 33%;
+  float: left;
+  
 }
 
 #middle {
+  color: white;
+  background: #9e1212;
+  width: 33%;
+  float:left;
 }
 
 #right {
+  color: white;
+  background: #30948D;
+  width: 33%;
+  float: left;
 }
 
 #full {
+  color: white;
+  background: #394549;
+
 }
 
 #division {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background: #6ea3da;
+
 }
 
 aside {
+  color: white;
+  background: #a6b747;
+  float: left;
+
 }
 
 footer {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #ffa500; 
+}
+
+.clearfix{
+  content: " ";
+  display: block;
+  clear: both;
 }
