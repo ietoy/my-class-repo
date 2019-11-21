@@ -1,0 +1,33 @@
+h1, h2 {
+    font-family: "Dancing Script";
+}
+
+h3, h4 {
+    font-family: "Odibee Sans"
+}
+
+body {
+    font-family: "Roboto Mono";
+    line-height: 150%;
+    letter-spacing: normal;
+}
+
+.heavy {
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0cm;
+    line-height: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.big {
+    font-size: 24px;
+}
+
+.tall {
+    line-height: 50px;
+}
+

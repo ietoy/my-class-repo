@@ -1,0 +1,21 @@
+a {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:focus {
+    color: white;
+}
+
+a:active {
+    color: gray;
+}
+
+.black {
+    color: black;
+}
