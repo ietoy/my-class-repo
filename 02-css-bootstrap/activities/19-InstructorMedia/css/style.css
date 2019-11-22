@@ -62,7 +62,7 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   /* The body's bg color will be #333 */
   body {
     background-color: #333;
@@ -70,7 +70,7 @@ body {
 
   /* The wrapper's width will be 600px */
   .wrapper {
-    width: 600px;
+    width: 400px;
     padding: 20px;
   }
   #main-content {
@@ -101,7 +101,36 @@ body {
 }
 
 
-@media screen and (max-width: 400px) {
-/**/
+@media screen and (min-width: 769px) {
+/* The body's bg color will be */
+body {
+  background-color: purple;
+}
+
+/* The wrapper's width will be 300px */
+.wrapper {
+  width: 1200;
+  padding: 10px;
+}
+
+#main-content {
+/* visual */
+  background: goldenrod;
+  height: 900px;
+}
+
+#sidebar {
+  /* Positioning */
+  /* Visual */
+  background: goldenrod;
+  height: 900px;
+}
+
+p::first-line {
+  color: lime;
+  font-weight: bolder;
+}
+
+
 
   }
