@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13 Bands</title>
+</head>
+
+<body>
+    
+        <script>
+            var userBand=prompt("What is your favorite band?");
+            
+            var myBands=["Sigrid", "Half Alive", "Lake Street Dive", "Hippo Campus"];
+
+            // toLowerCase is a property of strings, can be applied to any string
+            var userBandLower = userBand.toLowerCase();
+            
+            console.log(userBandLower)
+
+            if (myBands.indexOf(userBand) != -1) {
+                alert("YEAH I LOVE THEM!");
+            }
+            else {
+                alert("Nah. They're pretty lame.");
+            }
+
+        </script>
+    
+</body>
+</html>
