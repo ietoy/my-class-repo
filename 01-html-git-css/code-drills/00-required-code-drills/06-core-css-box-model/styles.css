@@ -1,0 +1,35 @@
+div {
+    padding: 50px;
+}
+
+p {
+    margin: 0px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.red-textbox-left {
+    float: left;
+    background: red;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.blue-textbox-right {
+    float: right;
+    background: blue;
+    margin-right: 50px;
+}
+
+.yellow-textbox-initial {
+    float: initial;
+    background: yellow;
+    margin-bottom: 50px;
+}
+
+.green-textbox-clear {
+    background: green;
+    margin-top: 250px;
+    clear: both;
+   
+}
