@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        var confirmSteak = confirm("Do you like steak?")
+        var birthYear = prompt("And in what year were you born?")
+
+
+            if (confirmSteak) {
+                document.write("Here's a Steak Sandwich!");
+            }
+            else {
+                document.write("Here's a Tofu Stir-Fry!");
+            }
+
+        
+            if (birthYear>1998) {
+                document.write(" No Sake for you!");
+            }
+            else if (birthYear<1998) {
+                document.write(" Heres some Sake too! Kanpai!");
+            }
+            else {
+                document.write(" And just old enough, have some Sake!")
+            }
+    </script>
+    
+</body>
+</html>

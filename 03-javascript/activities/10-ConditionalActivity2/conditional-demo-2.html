@@ -26,9 +26,12 @@
         alert("puppies");
       }
       else {
-        alert("goats");
+        alert("goats"); 
+        // The string of "4" is not equal to 4, takes into account value and type
       }
 
+      // 3 = signs reads the element in "" as a string
+      // 2 = signs reads the element as itself, so in this case a number, does not account for type
       if ("4" == 4) {
         alert("puppies");
       }
@@ -43,12 +46,15 @@
         alert("vanilla ice");
       }
 
+      // OKAY! So, even though the logical statement above of false === false is true,
+      // the code is smart enough to know that false mans false, so it reads the else statement
       if (false) {
         alert("the neighborhood");
       }
       else {
         alert("one direction");
       }
+
 
       if (("5" + "5") === "55") {
         alert("tofu");
@@ -57,6 +63,9 @@
         alert("soybean");
       }
 
+      // So, even though the syntax on this one is odd,
+      // because the elements are concatinated to read "65", the statement is true,
+      // so the output is richard
       if ((6 + "5") === "65") {
         alert("richard");
       }
