@@ -5,6 +5,11 @@ img {
 
 .boxContent {
     margin-top: 8rem!important;
+    padding-bottom: 15px;
+}
+
+body {
+    background-image: url(assets/Images/folk-pattern.png)
 }
 
 .lrWidth {
@@ -18,4 +23,35 @@ div.fit {
 
 .gray {
     color: #777777;
+}
+
+.grayBack {
+    background-color: #777777;
+}
+
+.tealBack {
+    background-color: #4aaaa5;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+div.tile {
+    background: #4aaaa5;
+    width: 200px;
+    height: 30px;
+    padding: 10px 0px;
+    color: #ffffff;
+    text-align: center;
+    left: 10px;
+    position: relative;
+}
+
+footer.topBorder {
+    border-top: solid;
+    border-color: #4aaaa5;
+    border-width: 5px;
+
+
 }
