@@ -1,0 +1,21 @@
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+.boxContent {
+    margin-top: 8rem!important;
+}
+
+.lrWidth {
+    width: 960px;
+}
+
+div.fit {
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.gray {
+    color: #777777;
+}
