@@ -16,3 +16,36 @@
   background-color: rgb(233, 56, 25);
   position: relative;
 }
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  position: absolute;
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: absolute;
+}
