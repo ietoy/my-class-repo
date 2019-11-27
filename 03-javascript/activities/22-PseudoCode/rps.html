@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <script>
+        // if (var = confirm("Would you like to play Rock Paper Scissors?") {
+            // prompt start game
+            var start = confirm("Would you like to play Rock Paper Scissors?");
+            
+            if (start) {
+                // ask player move
+                var playerMove = prompt("What's your move? (Rock, Paper, or Scissors)");
+                // npc move array
+                var npcList = ["rock", "paper", "scissors"]
+                // gen npc move
+                var npcMove = npcList[Math.floor(Math.random()*npcList.length)];
+        
+                // check for win
+                var compare = function(playerMove, npcMove){
+                    console.log(playerMove);
+                    console.log(npcMove);
+                    if (playerMove == npcMove) {
+                        alert("You and the computer both threw " + playerMove + " so you drew.");
+                        confirm("Would you like to play again?");
+                    }
+                    else if (playerMove == "rock" && npcMove == "scissors"){
+                        alert("You threw " + playerMove + " while the computer threw " + npcMove + ", so you win!")
+                        confirm("Would you like to play again?");
+
+                    }
+                    else if (playerMove == "scissors" && npcMove == "paper"){
+                        alert("You threw " + playerMove + " while the computer threw " + npcMove + ", so you win!")
+                        confirm("Would you like to play again?");
+
+                    }
+                    else if (playerMove == "paper" && npcMove == "rock"){
+                        alert("You threw " + playerMove + " while the computer threw " + npcMove + ", so you win!")
+                        confirm("Would you like to play again?");
+
+                    }
+                    else if (playerMove == "rock" && npcMove == "paper"){
+                        alert("You threw " + playerMove + " but the computer threw " + npcMove + ", so you lose!")
+                        confirm("Would you like to play again?");
+
+                    }   
+                    else if (playerMove == "scissors" && npcMove == "rock"){
+                    alert("You threw " + playerMove + " but the computer threw " + npcMove + ", so you lose!")
+                    confirm("Would you like to play again?");
+                }   
+                    else if (playerMove == "paper" && npcMove == "scissors"){
+                        alert("You threw " + playerMove + " but the computer threw " + npcMove + ", so you lose!")
+                        confirm("Would you like to play again?");
+                    }
+                }
+                compare(playerMove, npcMove)
+
+                }
+
+        // play again?
+
+        // for score tracker, use for loops
+    
+    </script>
+
+</body>
+
+</html>
