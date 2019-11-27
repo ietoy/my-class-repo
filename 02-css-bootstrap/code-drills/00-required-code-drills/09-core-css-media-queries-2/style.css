@@ -22,10 +22,88 @@
 
 @media (max-width: 1250px) {
   .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
 
+    position: fixed;
+    top: 10px;
+    left: 5%;
   }
 
   .box-blue {
-    
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 10px;
+    right: 5%;
+  }
+}
+@media (max-width: 1200px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 20px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 30px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 40px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 40px;
+    right: 5%;
   }
 }

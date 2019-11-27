@@ -58,6 +58,19 @@ body {
   
 }
 
+.btnTop{
+  margin: 2rem auto;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: red;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  transition: .2s;
+  display: none;
+}
+
 .btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 .5rem .7rem rgba(0,0,0,.2);
@@ -89,16 +102,92 @@ Therefore, we want our media queries in descending order, so that the most recen
     font-size: 55%;
   }
 
-  
+  h1 {
+    color: blue;
+  }
+
+  .about__box--center {
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+    font-size: 2rem;
+    /* If  a measurement is below 10px, it is a little unnecessary to use rem. Less than 10px is so small that keeping the absolute measurement of px will not really affect our styling on different screen sizes   */
+    border-radius: 3px;
+    border: solid 5px purple;
+    background-color: orangered;
+    color: white;
+  }
 }
 
 
 @media (max-width: 900px) {
 /* Set the font-size to 45% */
+  html {
+    font-size: 45%;
+  }
+
+  h1 {
+    color: purple;
+  }
+
+  .heading-sub {
+    font-size: 2.5rem;
+    text-align: center;
+    color: seagreen;
+    display: block;
+  }
+
+  .about__box--center {
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+    font-size: 2rem;
+    /* If  a measurement is below 10px, it is a little unnecessary to use rem. Less than 10px is so small that keeping the absolute measurement of px will not really affect our styling on different screen sizes   */
+    border-radius: 3px;
+    border: solid 10px green;
+    background-color: yellow;
+    color: black;
+  }
+
+  .btn {
+    margin: 2rem auto;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: rgb(93, 151, 216);
+    color: white;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    transition: .2s;
+    display: none;
+    
+  }
+
+  .btnTop{
+    margin: 2rem auto;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: red);
+    color: white;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    transition: .2s;
+  }
 
 }
 
 @media (max-width: 600px) {
   /* For the colorful background, look up setting a background-image to a linear gradient in css */
+  h1 {
+    color: white;
+  }
+
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, red, blueviolet, purple);
+  }
 
 }
