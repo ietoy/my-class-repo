@@ -13,7 +13,7 @@ var characterOneName = "Ms. Farley";
 var characterOneAge = 5;
 
 // reassign the variable `characterOneAge` to be the integer 6
-characterOneAge = 6;
+var characterOneAge = 6;
 
 // make a variable called `characterOneSalary` and assign it to be the number 100000.00
 var characterOneSalary = 100000.00;
