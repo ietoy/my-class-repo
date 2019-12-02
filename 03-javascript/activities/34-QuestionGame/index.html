@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question Game</title>
+</head>
+
+<body>
+    <script>
+        var ask = [
+                {q: "Are male rhinos called bulls?", a: true},
+                {q: "Are electrons larger than molecules?", a: false},
+                {q: "Is Mt. Fuji the tallest mountain in the world?", a: false},
+                {q: "Is an ostritch's eye bigger than it's brain?", a: true},
+                {q: "Are bats really blind?", a: false},
+                {q: "Is the collective noun for sphinx really sphinges?", a: true},
+                {q: "Is the sky blue? (usually)", a: true},
+                {q: "Is Freddie Murcury the lead singer of KISS?", a: false},
+                {q: "Is Grant burried in Grant's Tomb?", a: true},
+                {q: "Is a hotdog a sandwich?", a: true}
+            ]
+
+        var answer;
+        var score = 0;
+    // We'll start by prompting the user if they would like to play a game
+        confirm("Would you like to play a trivia game?")
+            for (var i =0; i<ask.length; i++) {
+                answer = confirm(ask[i].q);
+                if (answer === ask[i].a) {
+                    alert("Correct!");
+                    score++;
+                }
+                else {
+                    alert("Wrong!");
+                }
+            }
+                
+        alert("Congratulations! Your final score is: " + score + "/10!")
+
+
+        
+
+
+    // Display questions one by one, asking if the statement is true or false?
+
+    // We'll have an array of questions, those questions are objects with boolean values for the confirm promtps?
+            // could we write a loop to move through the array of questions?
+            // stop asking questions after the last question has been asked
+
+    // We'll have a display pop up for getting the question correct and getting it wrong.
+    
+    // At the end of the game, we will display the users score
+        // We will store the users responses, correct and incorrect, in two variables that will increase
+        // incrementaly each time they get it right or wrong
+
+    // Trivia questions from Quizly
+        // Male Rhino bull? T
+        // Electron larger than molecule? F
+        // Mt. Fuji is tallest in world? F
+        // ostritch eye biger than brain? F
+        // bats blind? F
+        // horse collective term gallop? F
+        // sky blue? T
+        // Freddie murcury lead singer of One Direction? F
+        // Grant is burried in Grants Tomb? T
+        // Is a hotdog a sandwich? T
+
+    
+    </script>
+
+
+
+</body>
+</html>
