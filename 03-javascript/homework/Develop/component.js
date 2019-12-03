@@ -12,13 +12,14 @@
 // the password.
 
 
+// Special Characters
 var special;
-special = ["!", "@", "#", "$", "%", "^", "*", "?", "+", "="];
-// special = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", 
-//            "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", 
-//            "?", "@", "[", "\", "]", "^", "_", "`", "{", "|",
-//            "}", "~", """ ];
-
+special = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", 
+           "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", 
+           "?", "@", "^", "_", "`", "{", "|",
+           "}", "~"];
+        // add these special characters later, look up test-safe displays
+        // "/", "[", "]", """,   
 
 // Numeric Characters
 var numeric;
@@ -33,8 +34,16 @@ alphaLow = ["a", "b", "c", "d", "e",
             "u", "v", "w", "x", "y",
             "z"]
 
-
 // Uppercase Characters
+var alphaUp;
+    alphaUp = [ "A", "B", "C", "D", "E",
+                "F", "G", "H", "I", "J",
+                "K", "L", "M", "N", "O",
+                "P", "Q", "R", "S", "T",
+                "U", "V", "W", "X", "Y",
+                "Z"]
+
+
 
 // There may be a way to simplify the above alpha sets
 // into one array with the "to upper" or "to lower" thing,

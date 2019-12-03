@@ -7,7 +7,7 @@ ourArray =[];
 
 // Let's push the number 1 into ourArray
 ourArray.push(1);
-// console.log(ourArray);
+console.log(ourArray);
 
 // push the string "hello" into ourArray
 ourArray.push("Hello");
