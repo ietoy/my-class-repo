@@ -8,24 +8,19 @@ function fun() {
 // why doesn't "Functions are FUN! appear yet?"
 /*
 
-Your Answer here
-
 The console log doesn't appear because nothing calls the function
 
 */
 
 
 // define a function "thirtySeven" that console logs the sum of 18 and 19
-
 function thirtySeven() {
     console.log(18 + 19);
-}
+};
 
 
 // call two functions you've defined so far
-
 fun();
-
 thirtySeven();
 
 // define a function "log" that takes in an argument and console logs that argument
