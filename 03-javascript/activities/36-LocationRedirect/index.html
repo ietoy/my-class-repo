@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini-Project</title>
+</head>
+
+<body>
+    <script>
+// 1
+    // check which os the user is on
+
+    // navigator: Navigator
+    // appCodeName: "Mozilla"
+    // appName: "Netscape"
+    // appVersion: "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Saf
+
+// function showOs() {
+//     if (window.platform = "Win32") {
+//         // alert w/ message that says "welcome, x user!"
+//         alert("Welcome, " + OS + " user!");
+//     } else if (window.platform = )
+
+// }
+    
+// array method includes, can be used on strings
+// use this to check userAgent
+// function showOs() {
+//     var mircrosoft;
+//     mircrosoft = window.userAgent.includes("windows")
+//     alert("Welcome, " + os + " user!")
+// }
+
+function showOs() {
+    if (windows.userAgent.indexOf("Windows") !== -1) {
+        alert("Welcome, Windows user!")
+    } else if (windows.userAgent.indexOf("Apple") !== -1) {
+        alert("Welcome, Windows user!")
+    } else {
+        alert("I don't know what you're using.")
+    }
+};
+
+showOs();
+
+
+
+
+
+// 2
+    // check geolocation
+
+    // from w3schools
+        // var x = document.getElementById("demo");
+        //     function getLocation() {
+        //       if (navigator.geolocation) {
+        //       navigator.geolocation.getCurrentPosition(showPosition);
+        //       } else {
+        //       x.innerHTML = "Geolocation is not supported by this browser.";
+        //       }
+        //     }
+
+        //     function showPosition(position) {
+        //       x.innerHTML = "Latitude: " + position.coords.latitude +
+        //       "<br>Longitude: " + position.coords.longitude;
+        //     }
+
+    // redirect for if west coast
+    // redirect if east coast
+    
+    
+    function geoLocation() {
+        if (navigator.geolocation) {
+            // this is a method that belongs to window
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+
+    
+    </script>
+    
+
+
+</body>
+</html>
