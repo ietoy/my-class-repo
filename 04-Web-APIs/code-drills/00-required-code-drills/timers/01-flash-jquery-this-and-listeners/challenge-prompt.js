@@ -7,6 +7,8 @@
 function createButton(str) {
   // ---------- Your Code Here ----------
 
+  document.getElementById("display-area").createElement("div");
+  
 
 
 
