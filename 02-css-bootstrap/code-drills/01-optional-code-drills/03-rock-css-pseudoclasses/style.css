@@ -2,6 +2,7 @@
   height: 150px;
   width: 250px;
   margin: 20px;
+  float: left;
 }
 
 .inside-box {
@@ -37,3 +38,41 @@ button {
 
 /* Your code goes below here! */
 
+#bottom1:hover {
+  height: 100px;
+}
+
+#bottom2:active {
+  margin-right: 300px;
+}
+
+#bottom3:hover {
+  background-color: purple;
+}
+
+#bottom3:active {
+  margin-left: 300px;
+  background-color: purple;
+}
+
+.btn-even:hover {
+  height: 50px;
+  width: 100px;
+}
+
+.btn-even:active {
+  height: 200px;
+  width: 400px;
+}
+
+.btn-odd:hover {
+  background-color: gray;
+  border-width: 10px;
+}
+
+
+.btn-odd:active {
+  background-color: black;
+  color: white;
+  border-width: 15px;
+}

@@ -16,6 +16,7 @@
   body {
     padding: 0;
     margin: 0;
+    max-height: 100vh;
   }
 
   .nav {
@@ -34,7 +35,18 @@
     background-color: blue;
     padding: 20px 0;
     width: 100%;
+    position: absolute;
   }
+
+  /* this is a media listener that affects */
+  @media (max-height:750px) {
+    /* the footer once the max-height goes below 750px */
+    .footer {
+      /* so long as the viewport is taller than 750px */
+    position: initial;
+    /* the position is initial */
+  }
+}
 
 
 </style>
