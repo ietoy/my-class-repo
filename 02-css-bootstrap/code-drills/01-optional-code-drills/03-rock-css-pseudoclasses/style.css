@@ -76,3 +76,21 @@ button {
   color: white;
   border-width: 15px;
 }
+
+#top1:hover .inside-box {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+}
+
+#top2:hover .inside-box {
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#top3:hover .inside-box {
+  background-color: pink;
+  margin-right: 0px;
+  margin-top: 100px;
+}
