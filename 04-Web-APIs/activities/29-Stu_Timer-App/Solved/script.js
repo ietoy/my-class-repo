@@ -45,37 +45,66 @@ function getFormattedSeconds() {
   return formattedSeconds;
 }
 
+// this is the setTime function, which when run
 function setTime() {
+  // defines the variable minutes
   var minutes;
 
+  // if the status of the toggle switch is working,
   if (status === "Working") {
+    // the minutes variable will be set to 
+    // the workMinutesInput.value
     minutes = workMinutesInput.value.trim();
+    // otherwise,
   } else {
+    // the minutes variable will be set to the
+    // restMinutesInput.value
     minutes = restMinutesInput.value.trim();
   }
-
+  // then, the function clears interval
   clearInterval(interval);
+  // and defines total seconds as minutes times 60
   totalSeconds = minutes * 60;
 }
 
+// this is the renderTime Function
 function renderTime() {
+  // it references the minutesDisplay and secondsDisplay
   minutesDisplay.textContent = getFormattedMinutes();
   secondsDisplay.textContent = getFormattedSeconds();
+  // and sets their respective textContent to be the result of
+  // the functions getFormatedMinutes/seconds respectively
 
+
+  // IF the seconds elapsed is greater than or equal to
+  // the totalSeconds
   if (secondsElapsed >= totalSeconds) {
+    // AND IF the toggle status is set to working
     if (status === "Working") {
+      // alert the user that it is time for a break
       alert("Time for a break!");
+      // otherwise, once the first condition is met,
+      // (secondsElapsed is greater than or equal to 
+      // total seconds...)
     } else {
+      // Alert the user that it is time to get back to work
       alert("Time to get back to work!");
     }
-
+    // then stop the timer 
     stopTimer();
   }
 }
 
+// this is the function that starts the timer
 function startTimer() {
+  // first, it runs the function setTime
   setTime();
 
+  // then it sets the variable interval, which has 
+  // been defined globally, to the setInterval function,
+  // which increases the seconds elapsed by 1 every second, 
+  // and runs the renderTime to show the time remaining
+  // on the dom
   interval = setInterval(function() {
     secondsElapsed++;
     renderTime();

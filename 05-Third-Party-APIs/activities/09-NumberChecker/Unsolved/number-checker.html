@@ -34,6 +34,9 @@
         <div class="card-header">
           <div class="card-body text-center">
             <h3 class="card-title">You Pick</h3>
+
+            <!-- look into using value attributes for the homework, might be easier to check than text contnet -->
+            
             <button id="button-1" class="btn btn-danger btn-choice" value="1">
               <h1>1</h1>
             </button>
@@ -61,18 +64,23 @@
 
         <script type="text/javascript">
           $(document).ready(function() {
-
             // Here we create the on click event that gets the user's pick
             $(".btn-choice").on("click", function() {
+              var compChoice = Math.floor(Math.random() * 4) + 1;
+              var buttonValue = $(this).val();
+              $("#computer-pick").text(compChoice);
+
+              if (parseInt(buttonValue) !== compChoice) {
+                $("#result").text("You got it wrong!")
+              }
+              else{
+                $("#result").text("You got it right!")
+              };
 
               console.log("You clicked a button!!");
               // console.log(this);
               // console.log($(this).text());
               // console.log($(this).val());
-              // var buttonValue = $(this).val();
-
-
-
 
               // Add code to have the computer guess a random number between 1 and 4
 

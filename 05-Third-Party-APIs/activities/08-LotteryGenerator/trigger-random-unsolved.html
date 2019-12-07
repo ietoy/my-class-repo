@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Trigger Random</title>
+  <title>Lottery Number Generator</title>
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Added link to the jQuery Library -->
@@ -16,7 +16,7 @@
 
   <div class="jumbotron">
 
-    <h1 class="text-center">Generate a Random Number!</h1>
+    <h1 class="text-center">Generate a Lottery Number!</h1>
 
     <div class="text-center">
 
@@ -32,27 +32,25 @@
 
   <script type="text/javascript">
 
+    var ticket = "";
+
     $(document).ready(function() {
-
-      // CREATE THE MISSING CODE HERE. Your code should add content to the random-number div.
-      // ...
-
-
-        // when the button is clicked
         $("#random-button").on("click", function() {
-          // generate a random number between 1 and 1k  
-          var random = Math.floor(Math.random() * 1000) + 1;
-          // display this number in the "random-number" header
-          $("#random-number").text(random);
-        });
+          for (var i = 0 ; i < 9; i++) {
+            var random = Math.floor(Math.random() * 10);
+            ticket += random;
+          };
+
+        $("#random-number").prepend("<br><hr>" + ticket)
+
+
+          // WHY DO THEY KEEP CONCNATINATING OCNE THEYVE BEEN GENERATED?!?!?!?!!?
+
+
+    });
 
 
 
-
-
-
-
-      // ...
 
     });
 
