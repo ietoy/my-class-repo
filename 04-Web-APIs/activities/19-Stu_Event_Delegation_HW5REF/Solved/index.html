@@ -9,27 +9,41 @@
 </head>
 <body>
   <div class="container">
+    <!-- This form contains the input where we add more people -->
     <form>
       <h1>List of friends</h1>
+      <!-- This looks like where the new people are added to once saved -->
       <ul id="people-list">
+        <!-- This is our initial person, Bob, with an id of "0" -->
         <li id="0">Bob <button>edit</button></li>
       </ul>
+
       <input placeholder="name" id="name" />
+      <!-- Clicking this button adds a person to the list -->
       <button id="add-btn">Add Person</button>
     </form>
+
+    <!-- this is the modal container that pops up when we want to add information about the people on our list -->
     <div id="modal-container" class="modal">
       <div class="modal-content">
+          <!-- This is the header of the modal window, containing the persons name and the close window button -->
           <div class="modal-header">
+            <!-- This is the close button on the modal window. "&times;" allows the DOM to display an "X" without reading it as -->
             <span class="close">&times;</span>
+            <!-- This header contains the modal name, which I think pulls from whatever we saved the persons name as -->
             <h2 id="modal-name">
             </h2>
           </div>
+
+          <!-- This is the body of the modal container, which holds the header "description", the text area to enter information, and the "save" button -->
           <div class="modal-body">
             <h3>
               Description:
             </h3>
+            <!-- this sets the text area for information to be stored about the person. -->
             <textarea id="description" cols="30" rows="10"></textarea>
             <div>
+              <!-- this button saves the descriptoin we entered. -->
               <button id="save">Save</button>
             </div>
           </div>
