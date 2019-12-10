@@ -90,12 +90,15 @@
         firstNumber = "";
         secondNumber = "";
         operator = "";
+        // GATES
         isOperatorChosen = false;
         isCalculated = false;
 
+        // this is the jQuery that empties the dom components with the associated IDs
         $("#first-number, #second-number, #operator, #result").empty();
       }
 
+      // this sets a listener to the click of the buttons with the number class
       $(".number").on("click", function() {
 
         // Check if we've already run a calculation, if so... we'll just.
@@ -115,6 +118,8 @@
         }
 
       });
+
+      // this listener checks to see if an operator has been chosen
       $(".operator").on("click", function() {
 
         // Check if a first number has already been selected
