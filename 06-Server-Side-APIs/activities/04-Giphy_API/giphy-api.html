@@ -15,10 +15,15 @@
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=kittens&limit=1&api_key=wslWpWhssAgYDK6zVXacBDsacT47flr4";
 
+    // when using ajax, we need two keys
     $.ajax({
+      // wheretogo
       url: queryURL,
+      // and what to do
       method: "GET"
+      // .then promises to resolve once it gets a response, its like a callback
     }).then(function(response) {
+      // always console log when using ajax, 
       console.log(response);
 
       var gifs = response.data

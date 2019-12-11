@@ -25,44 +25,40 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-
-      // you'll need to add the movie name to change what we're referencing as the user changes the display by clicking buttons 
-
       // This .on("click") function will trigger the AJAX Call
       $("#find-movie").on("click", function(event) {
-        // Preventing the submit button from trying to submit the form
-        // We're optionally using a form so the user may hit Enter to search instead of clicking the button
+
+        // event.preventDefault() can be used to prevent an event's default behavior.
+        // Here, it prevents the submit button from trying to submit a form when clicked
         event.preventDefault();
+
         // Here we grab the text from the input box
         var movie = $("#movie-input").val();
+
         // Here we construct our URL
-        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&plot=short&apikey=trilogy";
-        console.log(queryURL);
+        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
         // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
         // and display it in the div with an id of movie-view
 
-        // YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE
+        // ------YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE.
 
-        // =================================================================
-        
         $.ajax({
           url: queryURL,
           method: "GET"
-        }).then(function(response) {
+        }).then(function(farley) {
+          console.log(farley);
 
-          var movieName;
-          movieName = response.Title;
 
-          $("#movie-view").add("<p>")
 
-          console.log(movieName);
-
+          // $("#movie-view").text(farley);
+          $("#movie-view").text(JSON.stringify(farley));
+          // $("#movie-view").append(JSON.stringify(farley));
+          // $("#movie-view").text(farley.Title);
         });
 
-        // CODE GOES HERE
+        // -----------------------------------------------------------------------
 
-        // =================================================================
       });
     </script>
   </div>
