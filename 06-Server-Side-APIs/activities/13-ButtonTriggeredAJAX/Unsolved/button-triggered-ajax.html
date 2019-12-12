@@ -17,21 +17,30 @@
     </button>
 
     <!-- STEP ONE: Open this file in the browser and click on the buttons. Watch what happens -->
-
     <!-- STEP TWO: between the dashed lines below
             * add three more buttons
             * add a data-person attribute of famous people you know
             * with a quote said by them -->
 
     <!-- **************************************** -->
-
-    <!-- YOUR BUTTONS GO HERE!!!!!! Delete this comment and put your buttons here.  -->
-
+    <button data-person="tom hanks">
+      I've made over 20 movies, and 5 of them are good.
+    </button>
+    <button data-person="stephen sondheim">
+      Art, in itself, is an attempt to bring order out of chaos.
+    </button>
+    <button data-person="stephen colbert">
+      There's an old saying about those who forget history. I don't remember it, but it's good.
+    </button>
+    <button data-person="marisa tomei">
+      My biological clock is (stamps foot three times) tickin’ like this, and the way this case is goin’, I ain't never gettin’ married!
+    </button>
+    <button data-person="joe pesci">
+      How 'bout if I just kick your ass?
+    </button>
     <!-- **************************************** -->
 
-
     <!-- STEP THREE: open this file in the browser and click on your buttons. If they don't work, then fix your buttons -->
-
     <!-- STEP FOUR: go over the JavaScript with your partners, and explain the lines of code to each other. -->
 
   </div>
@@ -41,32 +50,37 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
+    // this is our event listener for all button elements, it runs this function
     $("button").on("click", function() {
+      // first we set our variables.
+      // person is looking at the data-person attribute of the button we clicked on 
       var person = $(this).attr("data-person");
+      // our queryURL goes to the giphy site with the person clicked concatenated in to search for them specifically
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         person + "&api_key=wslWpWhssAgYDK6zVXacBDsacT47flr4&limit=10";
+        // at the end of our url, we limit the number of gifs we pull to 10 "&limit=10"
 
+      // out ajax request gets information from the queryURL
       $.ajax({
         url: queryURL,
         method: "GET"
       })
+        // once we have a response, then we run this function based on that information
         .then(function(response) {
+          // we console.log the response
           console.log(response)
+          // we set a new variable, results, to equal the value stored in the data key of the response object
           var results = response.data;
-
+          // this for loop works through the lenght of the results variable, which should be 10 items long because of our query request
           for (var i = 0; i < results.length; i++) {
+            // here we define more variables that will use to show the gifs to the user
             var gifDiv = $("<div>");
-
             var rating = results[i].rating;
-
             var p = $("<p>").text("Rating: " + rating);
-
             var personImage = $("<img>");
             personImage.attr("src", results[i].images.fixed_height.url);
-
             gifDiv.prepend(p);
             gifDiv.prepend(personImage);
-
             $("#gifs-appear-here").prepend(gifDiv);
           }
         });

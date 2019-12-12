@@ -22,9 +22,12 @@
       // STEP TWO: make a variable named state and then store the image's data-state into it.
       // Use the .attr() method for this.
 
+
       // ============== FILL IN CODE HERE FOR STEP TWO =========================
 
-      // CODE GOES HERE
+      var state = $(this).attr("data-state");
+
+      // console.log(state);
 
       // =============================================
 
@@ -36,7 +39,20 @@
       // image to it's data-still value and update the data-state attribute to 'still'
       // ============== FILL IN CODE HERE FOR STEP THREE =========================
 
-      // CODE GOES HERE
+        if (state === "still") {
+          var animate = $(this).attr("data-animate");
+          $(this).attr("data-state", "animate");
+          $(this).attr("src", animate);
+        } else if (state === "animate") {
+          $(this).attr("data-state", "still");
+          $(this).attr("src", still);
+        };
+
+        console.log(state);
+
+        // else if () {
+
+        // };
 
       // ==============================================
 
