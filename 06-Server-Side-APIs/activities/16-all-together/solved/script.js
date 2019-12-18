@@ -10,16 +10,14 @@ $(document).ready(function() {
   // function to make buttons and add to page
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
     $(areaToAddTo).empty();
-
     for (var i = 0; i < arrayToUse.length; i++) {
       var newButton = $("<button>");
       newButton.addClass(classToAdd);
       newButton.attr("data-type", arrayToUse[i]);
       newButton.text(arrayToUse[i]);
       $(areaToAddTo).append(newButton);
-    }
-
-  }
+    };
+  };
 
   $(document).on("click", ".animal-button", function() {
     $("#animals").empty();
