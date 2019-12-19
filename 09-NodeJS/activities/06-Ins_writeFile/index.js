@@ -4,7 +4,7 @@ var fs = require("fs");
 // 🙋 Rather than readFile, we are using the fs method writeFile. 
 // Rather than specifying an encoding format, our second argument is process.argv[2].
 
-fs.writeFile("log.txt", process.argv[2], function(err) {
+fs.appendFile("log.txt", process.argv[2], function(err) {
 
   if (err) {
     return console.log(err);
