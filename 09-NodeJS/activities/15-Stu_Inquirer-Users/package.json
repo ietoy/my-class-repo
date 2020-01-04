@@ -1,0 +1,21 @@
+{
+  "name": "stu_inquirer-users",
+  "version": "1.0.0",
+  "description": "This is our package activity at the moment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "??"
+  },
+  "repository": {
+    "type": "git",
+    "url": "??"
+  },
+  "keywords": [
+    "15"
+  ],
+  "author": "Ian Toy",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.1"
+  }
+}
