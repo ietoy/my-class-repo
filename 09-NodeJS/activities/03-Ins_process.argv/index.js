@@ -2,7 +2,7 @@
 console.log(process.argv);
 
 // arguments passed from the command line are accessed by index
-// console.log(process.argv[2]);
+console.log(process.argv[2]);
 
 
 // ☝️ How does the command line input relate to the output?

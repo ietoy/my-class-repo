@@ -17,7 +17,7 @@ b = process.argv[3];
 // console.log(arg1);
 // console.log(arg2);
 
-if (arg1 === arg2) {
+if (a === b) {
     console.log(true);
 } else {
     console.log(false);
