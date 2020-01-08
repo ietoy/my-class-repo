@@ -19,6 +19,9 @@ describe("DayCare", () => {
 
       expect(dayCare.children.length).toEqual(1);
       expect(dayCare.children[0]).toBe(child);
+
+      
+
     });
 
     it("should not add a child over the 'ageLimit'", () => {
