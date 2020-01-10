@@ -35,17 +35,21 @@ app.get("/", function(req, res) {
 });
 
 // What does this route do?
+  // this route gets information from our characters object per a get request.
 app.get("/api/characters", function(req, res) {
   return res.json(characters);
 });
 
 // What does this route do?
+  // This performs a similar request, but specifies which character in our object to get info from using :character express function
 app.get("/api/characters/:character", function(req, res) {
   // What does this code do?
+    // this saves the information from our chosen character to a varaible, chose, an object, then logs that object
   var chosen = req.params.character;
   console.log(chosen);
 
   // What does this code do?
+    // this looks at all of the characters in our characters object, and if the chosen character that we saved above matches one of our characters in our object, we will return that characters information
   for (var i = 0; i < characters.length; i++) {
     if (chosen === characters[i].routeName) {
       return res.json(characters[i]);
@@ -53,6 +57,7 @@ app.get("/api/characters/:character", function(req, res) {
   }
 
   // What does this code do?
+    // otherwise, we will send that we don't have that char in our object
   return res.send("No character found");
 });
 

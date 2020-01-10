@@ -13,3 +13,6 @@
 ### Bonus
 
 * Use Postman to send a POST request to the server you've been provided. Confirm that your character has been added to the database correctly.
+
+
+<!-- POST, BODY, RAW, JSON -->
