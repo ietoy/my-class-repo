@@ -1,0 +1,16 @@
+{
+  "name": "16-hotrestaurant",
+  "version": "1.0.0",
+  "description": "Hot Restaurant Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "author": "Ian & Alexis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "requirer": "0.0.4"
+  }
+}
