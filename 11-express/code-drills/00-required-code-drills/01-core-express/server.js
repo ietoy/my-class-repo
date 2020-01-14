@@ -1,4 +1,8 @@
 // 1. Configure Server
+var express = require("express");
+
+var app = express();
+var PORT = 3000;
 
 //Expected Output: 
 // {
@@ -16,7 +20,21 @@ var input = ["50 jerome.code.org", "30 ricky.code.com", "60 robert.chicken.com",
 function getNumVisits(arr) {
   // 2. ================= YOUR WORK HERE ==================
   
+  var obj = {};
 
+  var domainsAndCount = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+    domainsAndCount.push(arr[i].split(" "))
+  }
+
+  for (var i = 0; i < arr.length; i++) {
+    var visits = parseInt(domainsAndCount[i][0]);
+    var domain = domainsAndCount[i][1]
+
+    var subDomains = domain.split(".")
+  }
 
 
 
@@ -24,6 +42,8 @@ function getNumVisits(arr) {
 
   // ===================================================
 }
+
+getNumVisits(input);
 
 
 // At the root route, send the solution as JSON
@@ -40,5 +60,8 @@ function getNumVisits(arr) {
 
 // Listener
 // ===========================================================
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT)
+})
 
 // 1. Create server

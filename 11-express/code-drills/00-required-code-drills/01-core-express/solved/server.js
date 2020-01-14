@@ -25,7 +25,6 @@ function getNumVisits(arr) {
   // Separates the domains and their respective visits
   var domainsAndCount = []
 
-
   for (var i = 0 ; i < arr.length ; i++) {
     domainsAndCount.push(arr[i].split(" "))
   }
